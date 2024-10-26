@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    scroll-behavior: smooth;
+  }
+
+  .container-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 10px auto;
+    width: 600px;
+    overflow: auto;
+  }
+  .thumb{
+    width: 150px;
+    border-radius: 5px;
+   float: left;
+   box-sizing: border-box;
+  }
+  .thumb:hover{
+    opacity: .5;
+    cursor: pointer;
+  }
+
+  #jumbo{
+    width: 300px;
+    border-radius: 5px;
+  }
+
+  .h1{
+    text-shadow: 2px 2px 5px  black;
+    font-family: "Charm", cursive;
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    color: white;
+    font-size: 50px;
+  }
+  @media screen and (max-width:450px){
+
+    .container-body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .container{
+        overflow: auto;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      #jumbo{
+        border-radius: 10px;
+        width: 150px;
+      }
+      .thumb{
+        border-radius: 10px;
+        width: 50px;
+       float: left;
+       box-sizing: border-box;
+      }
+      .thumb:hover{
+        opacity: .5;
+        cursor: pointer;
+      }
+
+      .h1{
+        font-size: 25px;
+        position: absolute;
+        top: 20px;
+      }
+
+      .Pmusic{
+        margin: 20px 0;
+        width: 100px;
+        height: 20px;
+        background-color: white;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: black;
+      }
+
+  }

@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper-2 {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.cake>div {
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #b71f9b;
+}
+
+.cake>div::before {
+    content: "";
+    left: 15px;
+    top: 250px;
+    width: 70px;
+    height: 25px;
+    position: absolute;
+    background-color: #f567fd;
+    border-radius: 3px 3px 0px 0px;
+    border-bottom: 2px solid white;
+}
+
+.love {
+    top: 247px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.love>div {
+    width: 15px;
+    right: 263px;
+    height: 15px;
+    transform: rotate(45deg);
+    background-color: white;
+}
+
+.love>div::before {
+    content: "";
+    top: -8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+
+.love>div::after {
+    content: "";
+    right: 8px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.text span {
+    top: 285px;
+    z-index: 111;
+    color: rgb(255, 255, 255);
+    position: absolute;
+}
+
+.text span:nth-child(1) {
+    left: 20px;
+}
+.text span:nth-child(2) {
+    left: 75px;
+}
+
+.lilin>div {
+    top: 229px;
+    width: 3px;
+    left: 30px;
+    height: 20px;
+    position: absolute;
+    border-radius: 3px 3px 0px 0px;
+    background: linear-gradient(red 5%, white 95%);
+}
+
+.lilin>div:nth-child(1) {
+    left: 48px;
+}
+.lilin>div:nth-child(2) {
+    left: 65px;
+}
+
+@media screen and (max-width:450px) {
+
+    #container-2 {
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+
+    .wrapper-2{
+        top: -20px;
+    }
+    .cake>div {
+   
+        width: 90px;
+        height: 30px;
+        border-radius: 3px;
+        background-color: #b71f9b;
+    }
+    
+    .cake>div::before {
+        content: "";
+        margin: 5px -3px;
+        width: 65px;
+        height: 25px;
+        position: absolute;
+        background-color: #f567fd;
+        border-radius: 3px 3px 0px 0px;
+        border-bottom: 2px solid white;
+    }
+
+    /* LOVE */
+
+    .love{
+        position: absolute;
+        margin: -20px -372px;
+    }
+    .love>div {
+   
+        width: 13px;
+        height: 13px;
+        transform: rotate(45deg);
+        background-color: white;
+    }
+    
+    .love>div::before {
+        content: "";
+        top: -7px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .love>div::after {
+        content: "";
+        right: 7px;
+        width: 13px;
+        height: 13px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: white;
+    }
+    /* AKHIR LOVE */
+
+    /* TEXT SPAN */
+    .text{
+        margin: -314px -372px;
+        position: absolute;
+    }
+    .text span {
+        color: rgb(255, 255, 255);
+        position: absolute;
+    }
+    
+    /* AKHIR SPAN */
+
+
+
+    /* LILIN */
+    .lilin{
+        margin: -316px -365px;
+        position: absolute;
+    }
+    .lilin>div {
+        margin: 6px -5px;
+        width: 3px;
+        height: 20px;
+        position: absolute;
+        border-radius: 3px 3px 0px 0px;
+        background: linear-gradient(red,white, white);
+    }
+    
+    /* AKHIR LILIN */
+
+
+}

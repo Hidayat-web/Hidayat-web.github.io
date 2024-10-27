@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.wrapper{
+    text-align: center;
+    line-height: 40px;
+}
+
+.wrapper button a{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+}
+.wrapper button a:hover{
+    color: white;
+}
+
+.wrapper button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    transition: .3s;
+}
+
+.wrapper button:hover{
+    background-color: #dc629d;
+    color: white;
+}
+
+.wrapper>h1{
+    font-size: 20px;
+}

@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    scroll-behavior: smooth;
+  }
+
+  body{
+    height: 1800px;
+  }
+
+  .container-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 10px auto;
+    width: 600px;
+    overflow: auto;
+  }
+  .thumb{
+    width: 150px;
+    border-radius: 5px;
+   float: left;
+   box-sizing: border-box;
+  }
+  .thumb:hover{
+    opacity: .5;
+    cursor: pointer;
+  }
+
+  #jumbo{
+    width: 250px;
+    border-radius: 5px;
+  }
+
+  .h1{
+    text-shadow: 2px 2px 5px  black;
+    font-family: "Charm", cursive;
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    color: white;
+    font-size: 50px;
+  }
+  @media screen and (max-width:450px){ 
+
+    .container-body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .container{
+      top: 20px;
+      position: absolute;
+        overflow: auto;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      #jumbo{
+        border-radius: 10px;
+        width: 200px;
+      }
+      .thumb{
+        border-radius: 10px;
+        width: 80px;
+       float: left;
+       box-sizing: border-box;
+      }
+      .thumb:hover{
+        opacity: .5;
+        cursor: pointer;
+      }
+
+      .h1{
+        font-size: 35px;
+        position: absolute;
+        top: 10%;
+      }
+
+      .Pmusic{
+        font-size: 15px;
+        margin: 20px 0;
+        width: 150px;
+        height: 40px;
+        background-color: white;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: black;
+      }
+
+  }

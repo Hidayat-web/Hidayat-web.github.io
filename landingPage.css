@@ -1,0 +1,364 @@
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e48aa584;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+
+}
+
+.wrapper div:nth-child(2) {
+    animation: fly 8s ease-in infinite;
+}
+
+.wrapper div:nth-child(3) {
+    animation: fly 6s ease-in infinite;
+}
+
+.wrapper div:nth-child(4) {
+    animation: fly 9s ease-in infinite;
+}
+
+.wrapper div:nth-child(5) {
+    animation: fly 7s ease-in infinite;
+}
+
+.wrapper div {
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    transform: rotate(46deg);
+    opacity: .8;
+    animation: fly 5s ease-in infinite;
+}
+
+.wrapper div::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+}
+
+.wrapper div::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(60vh) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-100vh) translateX(5vw) rotate(160deg);
+    }
+
+    100% {
+        transform: translateY(-100vh) translateX(10vw) rotate(160deg);
+        opacity: 0;
+    }
+}
+
+.ucapan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    position: absolute;
+    top: 20px;
+}
+
+.ucapan h1 {
+    font-size: 20px;
+    font-family:Serif;
+    transform: scale(0);
+    animation: scale .5s ease-in forwards;
+}
+
+@keyframes scale {
+    100% {
+        transform: scale(1);
+    }
+}
+
+#element {
+    position: absolute;
+    bottom: 110px;
+}
+
+.wrapper-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-4{
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    bottom: 180px;
+}
+
+.wrapper-4 button a{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+}
+.wrapper-4 button a:hover{
+    color: white;
+}
+
+.wrapper-4 button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    transition: .3s;
+}
+
+.wrapper-4 button:hover{
+    background-color: #dc629d;
+    color: white;
+}
+
+
+/* responsive web */
+
+@media screen  and (max-width:450px){
+body{
+    overflow: hidden;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* fly love */
+.wrapper div:nth-child(2) {
+    animation: fly 8s ease-in infinite;
+}
+.wrapper div:nth-child(3) {
+    animation: fly 6s ease-in infinite;
+}
+.wrapper div:nth-child(4) {
+    animation: fly 9s ease-in infinite;
+}
+.wrapper div:nth-child(5) {
+    animation: fly 14.5s ease-in infinite;
+}
+.wrapper div:nth-child(6) {
+    animation: fly 10s ease-in infinite;
+}
+.wrapper div:nth-child(7) {
+    animation: fly 5.9s ease-in infinite;
+}
+
+
+@keyframes fly {
+    0% {
+        transform: translateY(60vh) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-100vh) translateX(5vw) rotate(160deg);
+    }
+
+    100% {
+        transform: translateY(-100vh) translateX(10vw) rotate(160deg);
+        opacity: 0;
+    }
+}
+/* akhir fly */
+
+/* love */
+.wrapper div {
+   
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    transform: rotate(46deg);
+    opacity: .8;
+    animation: fly 5s ease-in infinite;
+}
+
+.wrapper div::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+}
+
+.wrapper div::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+}
+/* akhir love */
+
+
+#ucapan {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    position: absolute;
+    top: -60px;
+}
+
+#ucapan h1 {
+    font-size: 35px;
+    font-family: "Charm", cursive;
+}
+
+#wrapper-4{
+    display: none;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    bottom: 20px;
+}
+
+#wrapper-4 button a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+}
+#wrapper-4 button a:hover{
+    color: white;
+}
+
+#wrapper-4 button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    transition: .3s;
+}
+
+#wrapper-4 button:hover{
+    background-color: #dc629d;
+    color: white;
+}
+
+/* #textArea{
+    overflow: auto;
+    display: flex;
+    top: 280px;
+    width: 90%;
+    height: 110px;
+    border: 2px solid rgb(205, 117, 132);
+    position: absolute;
+    background-color: aliceblue;
+    border-radius: 10px;
+    z-index: 9999;
+} */
+
+#element {
+    overflow: auto;
+    display: none;
+    width: 280px;
+    height: 250px;
+    border: 2px solid rgb(205, 117, 132);
+    position: absolute;
+    background-color: aliceblue;
+    border-radius: 10px;
+    z-index: 9999;
+    font-size: 15px;
+    margin: -300px -280px ;
+}
+
+#element::-webkit-scrollbar{
+    background: none;
+}
+
+#element1{
+    position: absolute;
+    top: 215px;
+    font-size: 20px;
+}
+#img{
+    display: none;
+    position: absolute;
+    margin: 400px 0 0;
+}
+
+#img>img{
+    box-shadow: 0 0 10px 2px rgba(0,0,0,.5);
+    border-radius:10px;
+    width: 200px;
+}
+/* animation */
+.fadIn{
+    transform: scale(0);
+    animation: in .8s ease-in forwards;
+}
+@keyframes in {
+    100%{
+        transform: scale(1);
+    }
+}
+.fadOut{
+    transform: scale(1);
+    animation: out .3s ease-out forwards;
+}
+
+@keyframes out {
+    100%{
+        transform: scale(0);
+    }
+}
+/* .kotak{
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 5px;
+    border: 2px solid rgb(209, 96, 254);
+    animation: text .5s ease-in forwards;
+    transform: scale(0);
+    overflow-y: auto;
+}
+
+@keyframes text {
+    100%{
+        transform: scale(1);
+    }
+} */
+}
+/* akhir responsive */

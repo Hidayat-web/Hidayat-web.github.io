@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    overflow-x: hidden;  
+}
+
+.background{
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+}
+
+.background img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 50%;
+    min-height: 50%;
+    filter: blur(15px);
+    -webkit-filter: blur(50px);
+    transform: scale(1.1);
+}
+
+.container-musik{
+
+    background-color: #e7e7e7;
+
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+}
+
+.container-musik:hover{
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.4);
+}
+
+.boxShadow{
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.4);
+}
+
+.player-img{
+    width: 150px;
+    height: 170px;
+    position: relative;
+    top: -40px;
+    left: 25px;
+}
+
+.player-img img{
+    object-fit: cover;
+    border-radius: 20px;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+.player-img:hover img{
+    box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.8);
+}
+
+.player-img img.active{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+h2{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    margin: 5px 0 0;
+}
+
+h3{
+    font-size: 10px;
+    text-align: center;
+    font-weight: 500;
+    margin: 20px 0 0;
+}
+
+
+.player-progress{
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px 20px 35px;
+    height: 6px;
+    width: 80%;
+}
+
+.progress{
+    background-color: #212121;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.music-duration{
+    position: relative;
+    top: -25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-controls{
+    position: relative;
+    top: -15px;
+    left: 43px;
+    width: 200px;
+}
+
+.fa-solid{
+    font-size: 15px;
+    color: #ffffff;
+    margin-right: 30px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.fa-solid:hover{
+    filter: brightness(40%);
+}
+
+.play-button{
+    font-size: 25px;
+    position: relative;
+    top: 3px;
+}
+
+/* web responsive */
+
+
+@media screen and (max-width:450px) {
+
+    .container-musik{
+        position: absolute;
+        background-color: #e7e7e7;
+        height: 300px;
+        bottom: -520px;
+        /* margin: 120px 0; */
+        width: 250px;
+        border-radius: 20px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        transition: all 0.5s ease;
+    }
+    
+    .container-musik:hover{
+        box-shadow: 0 15px 30px rgba(255, 255, 255, 0.4);
+    }
+    
+    .boxShadow{
+        box-shadow: 0 15px 30px rgba(255, 255, 255, 0.4);
+    }
+    
+    .player-img{
+        width: 200px;
+        height: 240px;
+        position: relative;
+        margin: -20px -1px;
+    }
+    
+    .player-img img{
+        object-fit: cover;
+        border-radius: 20px;
+        height: 0;
+        width: 0;
+        opacity: 0;
+        box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .player-img:hover img{
+        box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.8);
+    }
+    
+    .player-img img.active{
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s;
+        opacity: 1;
+    }
+    
+    h2{
+        font-size: 25px;
+        text-align: center;
+        font-weight: 500;
+        margin: -9px 0 0;
+    }
+    
+    h3{
+        font-size: 13px;
+        text-align: center;
+        font-weight: 500;
+        margin: 25px 0 0;
+    }
+    
+    
+    .player-progress{
+        background-color: #ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 55px 25px 35px;
+        height: 6px;
+        width: 80%;
+    }
+    
+    .progress{
+        background-color: #212121;
+        border-radius: 5px;
+        height: 100%;
+        width: 0%;
+        transition: width 0.1s linear;
+    }
+    
+    .music-duration{
+        position: relative;
+        top: -25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .player-controls{
+        position: absolute;
+        margin: 259px 25px;
+        width: 200px;
+    }
+    
+    .fa-solid{
+        font-size: 15px;
+        color: #515050;
+        margin-right: 30px;
+        cursor: pointer;
+        user-select: none;
+        transition: all 0.3s ease;
+    }
+    
+    .fa-solid:hover{
+        filter: brightness(40%);
+    }
+    
+    .play-button{
+        font-size: 25px;
+        position: relative;
+        top: 3px;
+    }
+     
+}
+/* akhir responsive */
